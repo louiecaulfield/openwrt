@@ -96,7 +96,7 @@ define MkImage
 endef
 
 define CompressLzma
-	$(STAGING_DIR_HOST)/bin/lzma e $(1) -lc1 -lp2 -pb2 $(2)
+	$(STAGING_DIR_HOST)/bin/lzma e $(1) -lc1 -lp2 -pb2 -d20 $(2)
 endef
 
 define MkImageSysupgrade/squashfs
